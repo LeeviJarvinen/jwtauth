@@ -24,7 +24,7 @@ router.get('/:id?',
 });
 
 
-router.post('/', 
+router.post('/register', 
 function(request, response) {
   User.add(request.body, function(err, dbResult) {
     if (err) {
